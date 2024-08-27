@@ -1,0 +1,13 @@
+
+@media (max-width:900px) {
+    .hidden{
+        display: none;
+        background-color: red;
+    }
+    .btn-auth{
+        width: 100%;
+    }
+}
+
+
+

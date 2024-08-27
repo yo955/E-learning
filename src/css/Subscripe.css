@@ -1,0 +1,67 @@
+#subscribe-section{
+    padding: 6.25rem 0 !important;
+}
+.main-container{
+    text-align: center;
+}
+.hero-section h1{
+    font-size: 4.2em;
+    font-weight: bold;
+}
+body{
+    background-color: red;
+}
+.hero-section{
+    position: relative;
+    margin-bottom: 2rem !important;
+}
+.hero-section::before{
+    position: absolute;
+    content: "";
+    background-color: #12baf0;
+    border: #12baf0 1px solid;
+    border-width:3px ;
+    width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2rem;
+}
+.hero-section::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height:1.2rem;
+    width: 1.2rem;
+    border: 2px solid #12baf0;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -2.4rem;
+}
+.text{
+    margin: 4rem auto;
+    max-width: 60%;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+.text p{
+    font-size: 1.8rem;
+    font-weight: 200 !important;
+    color: #0f0f0f !important;
+}
+.Subscribe-btn{
+    width: 15rem;
+    height: 6rem;
+    transition: all 5.ms ease;
+    text-align: center;
+    font-size: 2rem ;
+    font-weight: bold;
+    color: #000 ;
+    background-color: rgb(254 215 0) ;
+    border-radius: 1rem;
+    border-style: none ;
+}
+.Subscribe-btn:hover{
+    scale: 1.1;
+}

@@ -1,0 +1,70 @@
+#card-section{
+    padding: 14rem 0;
+}
+.hero-section{
+    text-align: center;
+    margin-bottom: 10rem !important;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+.card{
+    height: 18rem;
+    width: 15rem;
+    background-color: #9fe3f9;
+    border-radius: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    position: relative;
+    padding: 3px;
+    margin-bottom: 0.5rem;
+}
+@media (max-width:667px) {
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        min-width: 100% !important;
+    }
+    .hero-section{
+        margin-bottom: 4rem !important;
+    }
+}
+@media (min-width: 668px) and (max-width: 1267px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards .card {
+        min-width: 50% !important;
+    }
+    .hero-section{
+        margin-bottom: 5rem !important;
+    }
+}
+
+@media (min-width:1268px) {
+    .cards{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+}
+.cards .card img{
+    width: 35%;
+    margin: 15px auto;
+    position: relative;
+}
+.cards .card img::before{
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    
+}
