@@ -3,7 +3,6 @@ import img_world from "../images/World.png";
 //icons
 import LanguageIcon from "@mui/icons-material/Language";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import { Button } from "@mui/material";
 const Study = () => {
   return (
     <section
