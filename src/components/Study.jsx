@@ -13,6 +13,7 @@ const Study = () => {
         height: "35rem",
         display: "flex",
       }}
+      id="study-section"
     >
       <div className="container-sm">
         <div>
@@ -22,29 +23,24 @@ const Study = () => {
         </div>
         <div className="content" style={{ height: "80%" }}>
           <div className="icons" style={{ textAlign: "right" }}>
-            <LanguageIcon style={{ fontSize: "6rem", margin: "0 3rem" }} />
-            <AccessTimeIcon style={{ fontSize: "6rem" }} />
+            <LanguageIcon  style={{ fontSize: "4rem", margin: "0 3rem" }} />
+            <AccessTimeIcon style={{ fontSize: "4rem" }} />
           </div>
-          <div className="right" style={{ textAlign: "right" }}>
-            <h1 style={{ color: "#fff", fontSize: "5rem", marginBottom: "0" }}>
+          <div className="right" >
+            <h1 >
               ذاكر في اي وقت
             </h1>
-            <h2 style={{ color: "#000", fontSize: "5rem", margin: "5px 0" }}>
-              فى اى <span style={{ color: "rgb(254 215 0)" }}>مكان</span>
+            <h2 >
+              فى اى <span>مكان</span>
             </h2>
-            <Button
+           
+          </div>
+          <Button
+            className="btn-mui"
               variant="outlined"
-              style={{
-                background: "rgb(98 60 234)",
-                color: "white",
-                width: "10rem",
-                height: "3.5rem",
-                fontSize:"1.5rem"
-              }}
             >
               هبسطهالك
             </Button>
-          </div>
         </div>
       </div>
     </section>
