@@ -10,11 +10,11 @@ h2 span{
   color: "rgb(254 215 0)";
 }
 .btn-mui{
-  background-color: "rgb(98 60 234)";
-  color: "white";
-  width: "10rem";
-  height: "3.5rem";
-  font-size:"1.5rem";
+  background-color: rgb(98 60 234) ;
+  color: white ;
+  width: 10rem ;
+  height: 3.5rem ;
+  font-size:1.5rem ;
 }
 @media (min-width:768px) {
   .container-sm {
@@ -37,11 +37,15 @@ h2 span{
     align-items: center;
   }
   .img-world img{
-    width: 50%;
+    width: 80%;
+  }
+  .right{
+    text-align: center;
+    align-content: center;
   }
   .right h1,h2{
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0.3rem 0;
   }
   .container-sm {
@@ -52,14 +56,23 @@ h2 span{
     height: 100% !important;
     display: grid !important;
     grid-template-rows: repeat(3,1fr) !important;
+    grid-template-columns: repeat(1,1fr) !important;
   }
   .content .center{
     text-align: center;
+    align-content: center;
   }
   .icons{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .btn-mui{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+}
   }
 
 }

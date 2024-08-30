@@ -23,8 +23,8 @@ const Study = () => {
         </div>
         <div className="content" style={{ height: "80%" }}>
           <div className="icons" style={{ textAlign: "right" }}>
-            <LanguageIcon  style={{ fontSize: "4rem", margin: "0 3rem" }} />
-            <AccessTimeIcon style={{ fontSize: "4rem" }} />
+            <LanguageIcon  style={{ fontSize: "4rem", margin: "0 1rem" }} />
+            <AccessTimeIcon style={{ fontSize: "4rem",margin: "0 1rem" }} />
           </div>
           <div className="right" >
             <h1 >
@@ -35,12 +35,7 @@ const Study = () => {
             </h2>
            
           </div>
-          <Button
-            className="btn-mui"
-              variant="outlined"
-            >
-              هبسطهالك
-            </Button>
+          <button className="btn-mui">هبسطهالك</button>
         </div>
       </div>
     </section>
