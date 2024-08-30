@@ -1,0 +1,8 @@
+.container-sm {
+  padding: 0 1.5rem;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

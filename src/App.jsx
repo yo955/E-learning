@@ -9,6 +9,10 @@ import Header from './components/Header';
 import Subscripe from './components/Subscripe';
 import SwiperComponent from './components/Swiber'; 
 import CardSection from './components/CardSection';
+import Materials from './components/Materials';
+import SelectTextFields from './components/SelectTextFields';
+import Study from './components/Study';
+// import HorizontalScroll from './components/HorizontalScroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -60,11 +64,15 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Navbar setMymode={setMymode} />
-      {/* تأكد من أن Header و Subscripe يقبلان className */}
       <Header className="fade-up" /> 
       <Subscripe className="slide-in" /> 
       <SwiperComponent />
+      {/* <HorizontalScroll/> */}
       <CardSection/>
+      <Materials/>
+      <SelectTextFields/>
+      <SwiperComponent/>
+      <Study/>
     </ThemeProvider>
   );
 }

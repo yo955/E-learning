@@ -1,0 +1,123 @@
+.card-main {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card-materials {
+    height: 18rem;
+    width: 25rem;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 35px;
+    border: 1px solid #3fc7f3;
+    border-radius: 20px;
+    background-color: #3fc7f3;
+    box-shadow: 0 0 3px 1px #0fbff9;
+    backdrop-filter: blur(15px);
+    transition: all 0.7s ease;
+}
+
+.card-materials:hover {
+    transform: rotate3d(1, 1, 0, 20deg);
+    box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.card-materials h2 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+.card-materials h2:hover {
+    background-color: #446;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3rem;
+    padding: 0.5rem;
+}
+
+.btn-info {
+    color: white;
+    background-color: #facc15;
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
+    width: 8rem;
+    outline: none;
+    transition: all 0.5s ease;
+    margin: 1rem auto;
+}
+
+.info-btn:hover {
+    background-color: transparent;
+    border-color: #facc15;
+    color: #facc15;
+}
+.subscrbe-btn{
+    color: white;
+    background-color: #facc15c8;
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
+    width: 8rem;
+    outline: none;
+    transition: all 0.5s ease;
+    margin: 1rem auto;
+}
+.subscrbe-btn:hover {
+    background-color: transparent;
+    border-color: #facc15;
+    color: #facc15;
+}
+
+.card-footer {
+    font-size: 0.65em;
+    color: #446;
+}
+
+@media (max-width: 667px) {
+    .cards-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-materials {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (min-width: 668px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .card-materials {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media (min-width: 1268px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .card-main:nth-child(1) {
+        transform: translateY(0);
+    }
+    
+    .card-main:nth-child(2) {
+        transform: translateY(-40px);
+    }
+    
+    .card-main:nth-child(3) {
+        transform: translateY(-80px);
+    }
+    
+
+}

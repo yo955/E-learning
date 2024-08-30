@@ -9,23 +9,23 @@ import img_4 from "../images/study-2-svgrepo-com.svg";
 const cardData = [
   {
     img: img_1,
-    title: "Title 1",
-    para: "Description 1"
+    title: "هـتدرب",
+    para: "امتحانات إلكترونية تقدر تعيدها لحد ما تتقنها"
   },
   {
     img: img_2,
-    title: "Title 2",
-    para: "Description 2"
+    title: "هـنجهزك",
+    para: "مش محتاج تسأل هذاكر إيه النهاردة.. إحنا هنقول لك"
   },
   {
     img: img_3,
-    title: "Title 3",
-    para: "Description 3"
+    title: "هـتنافس",
+    para: "نظام نقط على كل حاجة بتذاكرها وهدايا للطلبة النشيطة"
   },
   {
     img: img_4,
-    title: "Title 4",
-    para: "Description 4"
+    title: "هـتشارك",
+    para: "مجموعات للمناقشة عشان تسأل وتشارك أفكارك مع زمايلك"
   }
 ];
 

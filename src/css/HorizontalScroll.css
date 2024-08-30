@@ -1,0 +1,23 @@
+.scroll-section {
+  overflow: hidden;
+  position: relative;
+  height: 100vh; /* ارتفاع العرض */
+}
+
+.scroll-container {
+  overflow: hidden;
+  height: 100%; /* تأكد من ملء الارتفاع */
+  display: flex;
+}
+
+.scroll-content {
+  display: flex;
+  width: fit-content; /* يتناسب مع الطول الكامل للمحتوى */
+  height: 100%; /* لتأمين محاذاة عمودية صحيحة */
+}
+
+.scroll-content img {
+  width: 500px; /* أو حسب احتياجاتك */
+  height: auto;
+  object-fit: cover;
+}
