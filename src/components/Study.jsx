@@ -22,8 +22,8 @@ const Study = () => {
         </div>
         <div className="content" style={{ height: "80%" }}>
           <div className="icons" style={{ textAlign: "right" }}>
-            <LanguageIcon style={{ fontSize: "4rem", margin: "0 1rem" }} />
-            <AccessTimeIcon style={{ fontSize: "4rem", margin: "0 1rem" }} />
+            <LanguageIcon style={{ fontSize: "4rem", margin: "0 1rem" ,color:'white'}} />
+            <AccessTimeIcon style={{ fontSize: "4rem", margin: "0 1rem"  ,color:'white'}} />
           </div>
           <div className="right">
             <h1>ذاكر في اي وقت</h1>
