@@ -20,6 +20,9 @@ h2 span{
   transition: all ease 0.5s;
   border: none;
   outline: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn-mui:hover{
   scale: 1.1;

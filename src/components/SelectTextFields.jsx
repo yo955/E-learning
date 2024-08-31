@@ -1,7 +1,5 @@
-import { useState } from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
+import React, { useState } from "react";
+import { Box, TextField, MenuItem, useMediaQuery } from "@mui/material";
 
 const grades = [
   { value: "1st", label: "الصف الأول الثانوي" },
@@ -31,13 +29,16 @@ export default function SelectTextFields() {
     setSelectedSubject(event.target.value);
   };
 
+  // استخدام useMediaQuery للتحقق من حجم الشاشة
+  const isSmallScreen = useMediaQuery("(max-width:767px)");
+
   return (
     <section id="text-filed-section" style={{ marginBottom: "6rem" }}>
       <div className="container">
         <div className="hero-section">
-          <h1 style={{ fontSize: "4rem" }}>
+          <h1 style={{ fontSize: isSmallScreen ? "2rem" : "4rem" }}>
             <span>أخــتار </span>
-            <span style={{ fontSize: "5rem" }} className="main-color">
+            <span style={{ fontSize: isSmallScreen ? "2.5rem" : "5rem" }} className="main-color">
               مُـدرســك
             </span>
           </h1>
@@ -45,13 +46,13 @@ export default function SelectTextFields() {
         <Box
           id="text-fields"
           component="form"
-          sx={{ "& .MuiTextField-root": { m: 1, width: "25ch" } }}
+          sx={{ "& .MuiTextField-root": { m: 1, width: isSmallScreen ? "90%" : "25ch" } }}
           noValidate
           autoComplete="off"
-          textAlign={"center"}
+          textAlign="center"
           style={{
             background: "#fde047",
-            width: "50%",
+            width: isSmallScreen ? "90%" : "50%",
             margin: "2px auto",
             padding: "3px",
             borderRadius: "3rem",

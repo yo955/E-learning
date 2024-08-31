@@ -18,6 +18,8 @@
     box-shadow: 0 0 3px 1px #0fbff9;
     backdrop-filter: blur(15px);
     transition: all 0.7s ease;
+    height: auto;
+
 }
 
 .card-materials:hover {
